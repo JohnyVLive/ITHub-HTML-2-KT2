@@ -1,34 +1,29 @@
 body{
-    height: auto;
-    min-height: 100%;
-    line-height: 1.6;
-    display: block;
-    margin: 0;
 }
 
 h1, h2, h3, h4{
     font-family: Roboto,sans-serif;
 }
 
-.section1__h2-text{
-    font-weight: 700;
+.bw-posrel{
     word-wrap: break-word;
     position: relative;
-    line-height: 1.1;
 }
 
-.section1__h3-text{
+.section1_h2-dynamic{
+
+}
+
+.fs-125{
+    font-size: 1.25rem;
+}
+
+.fs-15{
     font-size: 1.5rem;
-    line-height: 1.2;
-    word-wrap: break-word;
-    position: relative;
 }
 
-.section2__h3-text{
-    font-weight: 400;
+.fs-1875{
     font-size: 1.875rem;
-    line-height: 1.4;
-    margin: -25px 1px 0 22px;
 }
 
 .font-1{
@@ -39,22 +34,32 @@ h1, h2, h3, h4{
     font-family: Montserrat, sans-serif !important;
 }
 
-.text-2{
+.fw400{
     font-weight: 400;
-    font-size: 1.25rem;
-    margin: 47px 0 0;
 }
 
-.text-3{
-    font-weight: 400;
-    font-style: italic;
-    margin: 20px 0 0;
-}
-
-.text-4{
-    font-size: 1.5rem;
-    line-height: 1.2;
+.fw700{
     font-weight: 700;
+}
+
+.line-height11{
+    line-height: 1.1;
+}
+
+.line-height12{
+    line-height: 1.2;
+}
+
+.line-height14{
+    line-height: 1.4;
+}
+
+.line-height16{
+    line-height: 1.6;
+}
+
+.italic{
+    font-style: italic;
 }
 
 .al-center{
@@ -83,15 +88,36 @@ h1, h2, h3, h4{
 
 .ptb10{
     padding-top: 10px;
+}
+.pb10{
     padding-bottom: 10px;
 }
-.prl20{
+.pr20{
     padding-right: 20px;
+}
+
+.pl20{
     padding-left: 20px;
+}
+
+.m0{
+    margin: 0;
+}
+
+.m-25{
+    margin: -25px 1px 0 22px;
 }
 
 .mt30{
     margin: 30px auto 0 0;
+}
+
+.mtb20{
+    margin: 20px 0 0;
+}
+
+.mtb47{
+    margin: 47px 0 0;
 }
 
 .flex{
@@ -104,7 +130,6 @@ h1, h2, h3, h4{
 
 .flex_row{
     flex-flow: row;
-    flex-direction: row;
 }
 
 .flex_wrap{
@@ -127,10 +152,10 @@ h1, h2, h3, h4{
 
 .section1__repeater{
     display: grid;
-    grid-gap: 0px;
+    grid-gap: 0;
 }
 
-.btn-1{
+.btn{
     font-size: 0.875rem;
     background-image: none;
     border-style: none;
@@ -152,15 +177,14 @@ h1, h2, h3, h4{
 }
 
 .btn-style{
-    color: #ffffff !important;
-    background-color: #84c0a0 !important;
+    color: #ffffff;
+    background-color: #84c0a0;
 }
 
 .radius-50{
     border-radius: 50px !important;
 }
 
-/*Доделать ховер*/
 .hover-white:hover{
     background-color: white;
     color: black;
@@ -210,7 +234,6 @@ h1, h2, h3, h4{
 
 .section2__container3{
     flex: 0 0 33%;
-    /*min-height: 100%;*/
 }
 
 .section2__container4{
@@ -240,25 +263,23 @@ h1, h2, h3, h4{
 
 .icon{
     display: inherit;
+    margin: 0 auto 0 0;
+    border-width: 0;
+}
+
+.size-64{
     height: 64px;
     width: 64px;
-    margin: 0 auto 0 0;
-    border-width: 0px;
 }
 
 
 
-
-
-
-
-
 @media only screen and (max-width: 371px) {
-    .sheet_width {
+    .sheet_width_dynamic {
         width: 320px !important;
         min-height: 1279px;
     }
-    .section1__h2-text{
+    .section1_h2-dynamic{
         font-size: 1.5rem;
         margin: 50px auto 0;
         width: auto;
@@ -268,11 +289,11 @@ h1, h2, h3, h4{
     }
 }
 @media only screen and (min-width: 372px) and (max-width: 575px) {
-    .sheet_width {
+    .sheet_width_dynamic {
         width: 450px !important;
         min-height: 949px;
     }
-    .section1__h2-text{
+    .section1_h2-dynamic{
         font-size: 1.5rem;
         margin: 100px auto 0;
         width: auto;
@@ -285,11 +306,11 @@ h1, h2, h3, h4{
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 770px) {
-    .sheet_width {
+    .sheet_width_dynamic {
         width: 520px !important;
         min-height: 949px;
     }
-    .section1__h2-text{
+    .section1_h2-dynamic{
         font-size: 2rem;
         margin: 150px auto 0;
         width: auto;
@@ -302,11 +323,11 @@ h1, h2, h3, h4{
     }
 }
 @media only screen and (min-width: 771px) and (max-width: 990px) {
-    .sheet_width {
+    .sheet_width_dynamic {
         width: 720px !important;
         min-height: 1079px;
     }
-    .section1__h2-text{
+    .section1_h2-dynamic{
         font-size: 3.2rem;
         margin: 150px auto 0;
         width: auto;
@@ -319,11 +340,11 @@ h1, h2, h3, h4{
     }
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
-    .sheet_width {
+    .sheet_width_dynamic {
         width: 940px !important;
         min-height: 979px;
     }
-    .section1__h2-text{
+    .section1_h2-dynamic{
         font-size: 3.5rem;
         margin: 267px auto 0;
         width: auto;
@@ -338,11 +359,11 @@ h1, h2, h3, h4{
 }
 
 @media only screen and (min-width: 1201px) {
-    .sheet_width {
+    .sheet_width_dynamic {
         width: 1140px !important;
         min-height: 879px;
     }
-    .section1__h2-text{
+    .section1_h2-dynamic{
         font-size: 3.75rem;
         margin: 267px auto 0;
         width: 867px;
